@@ -4,7 +4,7 @@ let userName = prompt('please enter your name?')
 console.log('welcom ' + userName);
 document.write("<pre>");
 
-let sureQuestion = prompt('are you ready to have this quiz?').toUpperCase()
+let sureQuestion = prompt('are you ready to have this quiz? if yes insert Y else insert N ').toUpperCase()
 //console.log(sureQuestion)
 switch (sureQuestion) {
     case 'Y':
@@ -32,7 +32,7 @@ switch (favFood) {
         console.log(text);
         break;
 }
-let sportQuestion = prompt('do you think that i like see sports match?').toUpperCase()
+let sportQuestion = prompt('do you think that i like see sports match? if yes insert Y else insert N ').toUpperCase()
 //console.log(sportQuestion)
 switch (sportQuestion) {
     case 'Y':
@@ -46,7 +46,7 @@ switch (sportQuestion) {
         console.log(text);
         break;
 }
-let animalsQuestion = prompt('do you think that i like animals?').toUpperCase()
+let animalsQuestion = prompt('do you think that i like animals? if yes insert Y else insert N ').toUpperCase()
 //console.log(sureQuestion)
 switch (animalsQuestion) {
     case 'Y':
@@ -60,7 +60,7 @@ switch (animalsQuestion) {
         console.log(text);
         break;
 }
-let farmmingQuestion = prompt('do you think that i like farmming').toUpperCase()
+let farmmingQuestion = prompt('do you think that i like farmming ? if yes insert Y else insert N ').toUpperCase()
 //console.log(farmmingQuestion)
 switch (farmmingQuestion) {
     case 'Y':
@@ -74,7 +74,7 @@ switch (farmmingQuestion) {
         console.log(text);
         break;
 }
-let sleepingQuestion = prompt('do you think that i love sleeping').toUpperCase()
+let sleepingQuestion = prompt('do you think that i love sleeping? if yes insert Y else insert N ').toUpperCase()
 //console.log(sleepingQuestion)
 switch (sleepingQuestion) {
     case 'Y':
