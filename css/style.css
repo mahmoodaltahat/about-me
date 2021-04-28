@@ -11,6 +11,7 @@ body {
     background-color: rgb(27, 4, 4)
     font-size: 30px;
 
+    
     } 
     logo {
 
@@ -20,7 +21,7 @@ body {
     p {
         font-size: 15px;
         text-align: center;
-        color: red  ;
+        color: rgb(25, 208, 221)  ;
 
     }
     #display_image {
@@ -28,9 +29,22 @@ body {
         text-align: center
         }
 
-        ul li  a {
-            color:red ; 
-            border:2px solid rgb(75, 9, 255);
-            display:inline-block ;
+        ul li   {
+            list-style-type: circle;
+            color:rgb(240, 227, 227) ; 
+            display:inline ;
             width: 100px;
-                }
+           }
+    
+           }   
+            
+     h2 {
+        color:rgb(74, 6, 231) ;
+        }
+
+     
+     ul.a {
+        color:rgb(74, 6, 231) ;
+        list-style-type: circle;
+        display:inline-block ;
+      }

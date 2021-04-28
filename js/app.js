@@ -18,11 +18,14 @@ switch (sureQuestion) {
         console.log(text);
         break;
 }
+
+let score = 0;
 let favFood = prompt('Do you think that I like programing ? if yes insert Y else insert N ').toUpperCase()
 //console.log(favFood)
 switch (favFood) {
     case 'Y':
         alert('great your answer is true')
+        score = score + 1;
         break;
     case 'N':
         alert('ohh No its wrong answer')
@@ -40,6 +43,7 @@ switch (sportQuestion) {
         break;
     case 'N':
         alert('true answer you are doing great!')
+        score = score + 1;
         break
     default:
         text = 'this is not an expected value try again'
@@ -50,10 +54,11 @@ let animalsQuestion = prompt('do you think that i like animals? if yes insert Y 
 //console.log(sureQuestion)
 switch (animalsQuestion) {
     case 'Y':
-        alert('true answer my favorite animal is the fox')
+        alert('true answer ')
+        score = score + 1;
         break;
     case 'N':
-        alert('wrong answer i like an animals specially the fox ')
+        alert('wrong answer i like an animals ')
         break
     default:
         text = 'this is not an expected value try again'
@@ -65,6 +70,7 @@ let farmmingQuestion = prompt('do you think that i like farmming ? if yes insert
 switch (farmmingQuestion) {
     case 'Y':
         alert('thas true ' + userName + ' you are great')
+        score = score + 1;
         break;
     case 'N':
         alert('no ' + userName + ' its wrong answer')
@@ -82,12 +88,76 @@ switch (sleepingQuestion) {
         break;
     case 'N':
         alert(' yes i hate sleeping ')
+        score = score + 1;
         break
     default:
         text = 'this is not an expected value try again'
         console.log(text);
         break;
 }
+
+for (let i = 4; i >= 1; i--) {
+    let myAge = prompt('please guess my Age ');
+    if (myAge > 28) {
+        //console.log(myAge);
+        //console.log('it is too high');
+        alert('it is too high')
+    } else if (myAge < 28) {
+        //console.log(myAge);
+        //console.log('it is too low');
+        alert('it is too low')
+    } else if (myAge == 28) {
+        //console.log(myAge);
+        //console.log('it is true');
+        alert('it is true')
+        score++;
+        break;
+
+    }
+}
+
+let animals = ['fox', 'dog ', 'cat', 'goat', 'Owl', 'horse'];
+let userAns = prompt('Guess What is my fav animal ? ');
+let flag = false;
+for (let t = 1; t < 6; t++) {
+    for (let f = 0; f < animals.length; f++) {
+        if (userAns == animals[f]) {
+            alert('You got it  ');
+            //console.log('You got it !! ');
+            //console.log('You got it !! ');
+
+            flag = true;
+            score++;
+            break;
+        }
+
+
+    }
+    if (flag == true) { break; }
+    else {
+        alert(userAns + " Is a Wrong Answer Please try again ");
+        userAns = prompt('Try Again');
+
+    }
+}
+
+
+if (flag == false) {
+    alert('Try harder Next Time');
+    alert('The right answers is : ' + animals);
+    document.write('<br>');
+    document.write('my fav animal is answers is : ' + animals);
+
+}
+document.write('<br>');
+document.write('<p> My age is 28 years </p>')
+document.write('<br>');
+document.write('<p> my fav animals are: ' + animals + '</p>');
 document.write("<pre>");
+alert('Your Score is ' + score + '/7 ');
+document.write('<br>');
+document.write('<p> you have guessed ' + score + 'question about me </p>');
+document.write('<br>');
+document.write('<br>');
 alert('welcom ' + userName + ' and thanks for doing the quiz,I wish to you the best ');
-document.write(" <p> ^_^ thanks " + userName +  " for doing the quiz, I wish to you the best ^_^ </p>  ");
+document.write(" <p> ^_^ thanks " + userName + " for doing the quiz, I wish to you the best ^_^ </p>  ");
