@@ -1,9 +1,24 @@
 'use strict'
 document.write("<pre>");
-let userName = prompt('please enter your name?')
+
+let userName = prompt('please enter your name?');
+function Naming (){
 console.log('welcom ' + userName);
 document.write("<pre>");
+return userName;
+}
+Naming();
 
+/*let Naming = "What is your name?"; 
+function getUserName() {
+    return prompt(Naming);
+}
+function userName() {
+     alert("Hello "+getUserName());
+}
+userName();*/
+
+function quizSuring (){
 let sureQuestion = prompt('are you ready to have this quiz? if yes insert Y else insert N ').toUpperCase()
 //console.log(sureQuestion)
 switch (sureQuestion) {
@@ -18,8 +33,12 @@ switch (sureQuestion) {
         console.log(text);
         break;
 }
+}
+quizSuring ();
 
 let score = 0;
+function favFood(){
+
 let favFood = prompt('Do you think that I like programing ? if yes insert Y else insert N ').toUpperCase()
 //console.log(favFood)
 switch (favFood) {
@@ -35,6 +54,10 @@ switch (favFood) {
         console.log(text);
         break;
 }
+}
+favFood() ;
+
+function sport(){
 let sportQuestion = prompt('do you think that i like see sports match? if yes insert Y else insert N ').toUpperCase()
 //console.log(sportQuestion)
 switch (sportQuestion) {
@@ -50,6 +73,10 @@ switch (sportQuestion) {
         console.log(text);
         break;
 }
+}
+sport();
+
+function pets(){
 let animalsQuestion = prompt('do you think that i like animals? if yes insert Y else insert N ').toUpperCase()
 //console.log(sureQuestion)
 switch (animalsQuestion) {
@@ -65,26 +92,35 @@ switch (animalsQuestion) {
         console.log(text);
         break;
 }
+}
+pets();
+
+
+function farming(){
 let farmmingQuestion = prompt('do you think that i like farmming ? if yes insert Y else insert N ').toUpperCase()
 //console.log(farmmingQuestion)
 switch (farmmingQuestion) {
     case 'Y':
-        alert('thas true ' + userName + ' you are great')
+        alert('thas true  you are great')
         score = score + 1;
         break;
     case 'N':
-        alert('no ' + userName + ' its wrong answer')
+        alert('no its wrong answer')
         break
     default:
         text = 'this is not an expected value try again'
         console.log(text);
         break;
 }
+}
+farming();
+
+function Sleep(){
 let sleepingQuestion = prompt('do you think that i love sleeping? if yes insert Y else insert N ').toUpperCase()
 //console.log(sleepingQuestion)
 switch (sleepingQuestion) {
     case 'Y':
-        alert(userName + ' I know that you guessing that but its wrong answer ')
+        alert(' I know that you guessing that but its wrong answer ')
         break;
     case 'N':
         alert(' yes i hate sleeping ')
@@ -95,7 +131,10 @@ switch (sleepingQuestion) {
         console.log(text);
         break;
 }
+}
+Sleep();
 
+function Age(){
 for (let i = 4; i >= 1; i--) {
     let myAge = prompt('please guess my Age ');
     if (myAge > 28) {
@@ -115,9 +154,14 @@ for (let i = 4; i >= 1; i--) {
 
     }
 }
+}
+Age();
 
-let animals = ['fox', 'dog ', 'cat', 'goat', 'Owl', 'horse'];
+
+let animals = ['fox', 'dog', 'cat', 'goat', 'Owl', 'horse'];
+function fAnimals(){
 let userAns = prompt('Guess What is my fav animal ? ');
+
 let flag = false;
 for (let t = 1; t < 6; t++) {
     for (let f = 0; f < animals.length; f++) {
@@ -128,6 +172,7 @@ for (let t = 1; t < 6; t++) {
 
             flag = true;
             score++;
+            return score;
             break;
         }
 
@@ -149,6 +194,13 @@ if (flag == false) {
     document.write('my fav animal is answers is : ' + animals);
 
 }
+return animals;
+}
+ fAnimals();
+
+
+
+
 document.write('<br>');
 document.write('<p> My age is 28 years </p>')
 document.write('<br>');
@@ -159,5 +211,5 @@ document.write('<br>');
 document.write('<p> you have guessed ' + score + 'question about me </p>');
 document.write('<br>');
 document.write('<br>');
-alert('welcom ' + userName + ' and thanks for doing the quiz,I wish to you the best ');
-document.write(" <p> ^_^ thanks " + userName + " for doing the quiz, I wish to you the best ^_^ </p>  ");
+alert('welcom ' +userName+ ' and thanks for doing the quiz,I wish to you the best ');
+document.write(" <p> ^_^ thanks " +userName + " for doing the quiz, I wish to you the best ^_^ </p>  ");
