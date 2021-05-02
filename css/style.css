@@ -1,17 +1,22 @@
 h1 {
-    font-size: 15px;
     text-align: center;
-    color: rgb(207, 10, 109);
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: bolder;
+    background-color: rgb(21, 231, 214)
+
+}
 }
 body {
-    background-color: rgb(27, 4, 4);
-  }
+   
+    background-color: rgb(5, 59, 26);
+  background-repeat:unset;
+  background-size: 2000px;
+  } 
 
   header{
-    background-color: rgb(27, 4, 4)
+    background-color: rgb(9, 78, 26)
     font-size: 30px;
-
-    
     } 
     logo {
 
@@ -21,7 +26,6 @@ body {
     p {
         font-size: 15px;
         text-align: center;
-        color: rgb(25, 208, 221)  ;
 
     }
     #display_image {
@@ -29,22 +33,62 @@ body {
         text-align: center
         }
 
-        ul li   {
-            list-style-type: circle;
-            color:rgb(240, 227, 227) ; 
-            display:inline ;
-            width: 100px;
-           }
-    
-           }   
+        nav ul li {
+            display: inline;
+              
+            text-align: center;
+            background-color:#f19eb300;
+            color:rgb(231, 6, 25) ;
+          padding-top: 5mm;
+          padding-bottom: 5mm;
+          margin: 2px;
+          margin-bottom:0mm;
+          font-family:'Krona One', sans-serif; ;
+          
+             
+          }
             
      h2 {
         color:rgb(74, 6, 231) ;
         }
 
      
-     ul.a {
-        color:rgb(74, 6, 231) ;
-        list-style-type: circle;
-        display:inline-block ;
       }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height:200px;
+        margin-top: 10mm;
+        border: 8px solid rgb(33 168 168 / 50%);; 
+           
+        }
+        li a {
+   
+   
+            padding: 8px 16px;
+            text-decoration:none;
+            lighting-color:red;
+            text-align: center;
+            display: inline-grid;
+            padding-right: 1pc;
+         margin-top: 0em;
+         margin-bottom: 0mm;
+          }
+
+          li a:hover:not(.active) {
+            background-color: #555;
+            color: rgb(255, 255, 255);
+          }
+          
+          #main{
+
+            background-color: rgb(21, 231, 214)
+
+          }
+
+          #footer{
+            background-color: rgb(11, 31, 146)
+
+          
